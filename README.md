@@ -1,2 +1,2 @@
-# IDM-Web-Dev-Fall-2023
+# IDM Web Dev Fall 2023
  
