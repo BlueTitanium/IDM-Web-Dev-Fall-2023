@@ -6,6 +6,25 @@
     font-family:"Heroeau";
     src: url("HEROEAU-ELEGANT-DEMO.ttf") format("truetype");
 } */
+@font-face {
+    font-family:"Against";
+    src: url("fonts/against.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Gyahegi";
+    src: url("fonts/Gyahegi.otf") format("opentype");
+}
+@font-face {
+    font-family:"Raleway";
+    font-weight: 400;
+    src: url("fonts/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Raleway";
+    font-weight: 600;
+    src: url("fonts/Raleway-SemiBold.ttf") format("truetype");
+}
+
 *{
     margin: 0;
     text-decoration: none
@@ -21,12 +40,22 @@ body{
     align-items: center;
     justify-content: center;
     background: url('images/FallLeaves.png'), #E6D5B8 0% 0% / 115.91737270355225px 115.91737270355225px repeat;
+    animation: scrolling 15s linear infinite;
+}
+
+@-webkit-keyframes scrolling{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 0 105%;
+    }
 }
 
 .holder{
     display: flex;
     padding: 10px;
-    width: 80%;
+    width: 75%;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -258,7 +287,7 @@ line-height: normal;
     align-self: stretch;
     background: url(images/palmbranchL.png) 50%  no-repeat;
     border-radius: 20px;
-    
+    background-position: center;
 }
 .bottom .R{
     
@@ -267,6 +296,7 @@ line-height: normal;
     align-self: stretch;
     background: url(images/palmbranchR.png) 50% no-repeat;
     border-radius: 20px;
+    background-position: center;
 }
 .heading{
     display: flex;
