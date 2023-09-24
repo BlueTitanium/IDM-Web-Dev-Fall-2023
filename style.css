@@ -39,8 +39,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url('images/FallLeaves.png'), #E6D5B8 0% 0% / 115.91737270355225px 115.91737270355225px repeat;
-    animation: scrolling 15s linear infinite;
+    background: url('images/FallLeaves.png'), #E6D5B8 0% 0% / 115px 115px repeat;
+    animation: scrolling 10s linear infinite;
+    animation-fill-mode: forwards
 }
 
 @-webkit-keyframes scrolling{
@@ -48,7 +49,7 @@ body{
         background-position: 0 0;
     }
     to{
-        background-position: 0 105%;
+        background-position: 0 456px;
     }
 }
 
