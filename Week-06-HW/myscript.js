@@ -1,3 +1,5 @@
+//js code modified from example in w3schools
+
 // Get the modal
 var modal = document.getElementById("myModal");
 // Get the button that opens the modal
