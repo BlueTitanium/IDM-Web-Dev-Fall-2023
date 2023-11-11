@@ -1,0 +1,181 @@
+@font-face {
+    font-family:"Raleway";
+    font-weight: 400;
+    src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Raleway";
+    font-weight: 600;
+    src: url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: flex-start;
+    gap: 10px;
+    background: #FFF;
+}
+
+.Holder {
+    display: flex;
+    max-width: 54.25vw;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 20px;
+}
+
+.Title{
+    flex: 1 0 0;
+    width: 100%;
+    align-self: stretch;
+    
+}
+.Title img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.Summary{
+    display: flex;
+    padding: 10px 10px 20px 10px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    border-bottom: 2px solid #000;
+}
+
+p{
+    flex: 1 0 0;
+    color: #000;
+    text-align: right;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    color: #FFF;
+    text-shadow: 4px 4px 4px rgba(166, 165, 255, 0.73);
+    font-family: Raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.spacer{
+    width: 2px;
+    align-self: stretch;
+    background: #000;
+}
+
+.Images{
+    display: flex;
+    padding: 10px 10px 20px 10px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #000;
+    position: relative;
+}
+
+.Images img{
+    position: relative;
+    max-width: 40%;
+    object-fit: contain;
+    transform: rotate(-10deg);
+    z-index: 10;
+}
+
+.Conclusion{
+    display: flex;
+    padding: 10px 10px 20px 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-bottom: 2px solid #000;
+}
+
+.Conclusion h2{
+    align-self: stretch;
+    text-align: center;
+}
+
+.Conclusion p{
+    align-self: stretch;
+    text-align: center;
+}
+
+/*
+https://codepen.io/ValentinBossens/pen/BaKRwea grain effect used below
+*/
+
+.grain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 300;
+    transform: translateZ(0);
+    pointer-events: none;
+}
+.grain:before {
+      content: "";
+      top: -10rem;
+      left: -10rem;
+      width: calc(100% + 20rem);
+      height: calc(100% + 20rem);
+      z-index: 9999;
+      position: fixed;
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
+      opacity: 0.15;
+      pointer-events: none;
+      -webkit-animation: noise 1s steps(2) infinite;
+      animation: noise 1s steps(2) infinite;
+      box-shadow: inset 0 0 0 1000px rgba(96, 11, 255, 0.2);
+
+    }
+
+    @-webkit-keyframes noise {
+      to { transform: translate3d(-7rem,0,0) }
+    }
+
+    @keyframes noise {
+      0% { transform: translate3d(0,9rem,0) }
+      10% { transform: translate3d(-1rem,-4rem,0) }
+      20% { transform: translate3d(-8rem,2rem,0) }
+      30% { transform: translate3d(9rem,-9rem,0) }
+      40% { transform: translate3d(-2rem,7rem,0) }
+      50% { transform: translate3d(-9rem,-4rem,0) }
+      60% { transform: translate3d(2rem,6rem,0) }
+      70% { transform: translate3d(7rem,-8rem,0) }
+      80% { transform: translate3d(-9rem,1rem,0) }
+      90% { transform: translate3d(6rem,-5rem,0) }
+      to { transform: translate3d(-7rem,0,0) }
+    }
+ 
