@@ -1,0 +1,355 @@
+@font-face {
+    font-family:"Raleway";
+    font-weight: 400;
+    src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Raleway";
+    font-weight: 600;
+    src: url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    box-sizing: border-box;
+
+    align-self: stretch;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+body{
+    display: flex;
+    padding: 2.5vw 5vw .5vw 5vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #FF6E3B;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    position: relative;
+}
+
+h1{
+    align-self: stretch;
+    color: #B33306;
+    font-family: Raleway;
+    font-size: 6.4vw; 
+    /* 128px / 20 = 6.4 */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h2{
+    height: 3vw;
+    margin-top: -1vw;
+    align-self: stretch;
+    color: rgba(0, 0, 0, 0.23);
+    font-family: Raleway;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h3{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h4{
+    align-self: stretch;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+h5{
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }
+p{
+    align-self: stretch;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.slidesHolder{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.23);
+}
+
+.carousel {
+    
+    margin: 0 6vw; /* space for prev/next buttons */
+    width: 100%;
+    border-radius: 1vw;
+}
+  
+  .carousel-cell {
+    width: 30vw;
+    height: 30vw;
+    margin-right: .5vw;
+    
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: 20px;
+    background: #FF8C63;
+
+  }
+
+  .carousel-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 1vw;
+    background: #995050;
+  }
+
+  .carousel-label{
+    display: flex;
+    height: 8vw;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: rgba(255, 140, 99, 0.53);
+  }
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+  
+  
+  /* smaller, dark, rounded square */
+  .flickity-prev-next-button {
+    width: 5.5vw;
+    height: 100%;
+    align-self: stretch;
+
+    border-radius: 20px;
+    background: #FF8C63;
+  }
+  .flickity-prev-next-button:hover {
+    background: #ac593c;
+  }
+  /* arrow color */
+  .flickity-prev-next-button .arrow {
+    fill: white;
+  }
+  .flickity-prev-next-button.no-svg {
+    color: white;
+  }
+  /* position outside */
+  .flickity-prev-next-button.previous {
+    left: -6vw;
+  }
+  .flickity-prev-next-button.next {
+    right: -6vw;
+  }
+
+  /* position dots up a bit */
+.flickity-page-dots {
+    bottom: -10px;
+  }
+  /* dots are lines */
+  .flickity-page-dots .dot {
+    background: transparent;
+  }
+
+.backButton{
+    display: flex;
+    width: 3vw;
+    height: 10vw;
+    padding: 5px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: .5vw;
+    position: fixed;
+    left: 1vw;
+    /* or -4vw */
+    border-radius: 20px;
+    background: #B33306;
+}
+
+.backButton:hover{
+    background: #4d1501;
+}
+
+.ImageContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: .5vw;
+    align-self: stretch;
+}
+
+.ContentBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5vw;
+}
+
+.TextBox{
+    display: flex;
+    width: 52vw;
+    padding: .5vw;
+    flex-direction: column;
+    align-items: center;
+    gap: .5vw;
+    border-radius: 1vw;
+    background: rgba(0, 0, 0, 0.23);
+    
+}
+
+.ImageBox{
+    display: flex;
+    padding: .5vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 20px;
+    background: #5D2828;
+}
+.point{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap:1vw;
+    align-self: stretch;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.point p{
+    flex: 1 0 0;
+}
+.point img{
+    height: 100%;
+    width: 10vw;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.RecipeContainer{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.23);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    flex-wrap: wrap;
+}
+
+.item-cell {
+    width: 15vw;
+    height: 15vw;
+    margin-right: .5vw;
+    
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: 20px;
+    background: #FF8C63;
+
+  }
+
+  .item-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 1vw;
+    background: #995050;
+  }
+
+  .item-label{
+    display: flex;
+    height: 4vw;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: rgba(255, 140, 99, 0.53);
+  }
+
+.FullImage{
+    height: 45vw;
+}  
+
+ul{
+    margin-left: 2vw;
+}
+
+li{
+
+}
+
+.Full{
+    width: 100%;
+}
