@@ -30,6 +30,7 @@ body{
     gap: 10px;
     background: #FF6E3B;
     position: relative;
+    overflow-x: hidden;
 }
 
 .header{
@@ -63,7 +64,20 @@ h2{
     font-weight: 600;
     line-height: normal;
 }
-
+.Typewriter__wrapper{
+  height: 3vw;
+  margin-top: -1vw;
+  align-self: stretch;
+  color: rgba(0, 0, 0, 0.23);
+  font-family: Raleway;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.Typewriter__cursor{
+  color: rgba(0, 0, 0, 0.23);
+}
 h3{
     color: #FFF;
     font-family: Raleway;
@@ -118,7 +132,7 @@ p{
 }
   
   .carousel-cell {
-    width: 30vw;
+    width: 40vw;
     height: 30vw;
     margin-right: .5vw;
     
@@ -131,9 +145,8 @@ p{
 
     border-radius: 20px;
     background: #FF8C63;
-
+    overflow: hidden;
   }
-
   .carousel-image{
     display: flex;
     flex-direction: column;
@@ -143,7 +156,12 @@ p{
     flex: 1 0 0;
     align-self: stretch;
     border-radius: 1vw;
-    background: #995050;
+    background:#5D2828;
+    
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    overflow: hidden;
   }
 
   .carousel-label{
@@ -165,7 +183,16 @@ p{
     font-size: 80px;
     color: white;
   }
-  
+
+  .carousel-cell:hover {
+    background: #ffffff;
+  }
+  .carousel-cell:hover h3{
+    color: #FF8C63;
+  }
+  .carousel-cell:hover .carousel-label{
+    background: #ffffffd2;
+  }
   
   /* smaller, dark, rounded square */
   .flickity-prev-next-button {
@@ -258,8 +285,21 @@ p{
     flex: 1 0 0;
     align-self: stretch;
     border-radius: 20px;
-    background: #5D2828;
+    background:#5D2828;
+    
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    overflow: hidden;
 }
+
+.thumbnail{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 .point{
     display: flex;
     padding: 5px;
@@ -324,20 +364,43 @@ p{
     flex: 1 0 0;
     align-self: stretch;
     border-radius: 1vw;
-    background: #995050;
+    background:#5D2828;
+    
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    overflow: hidden;
   }
 
   .item-label{
     display: flex;
     height: 4vw;
-    padding: 10px;
+    padding: .5vw;
     justify-content: center;
     align-items: center;
     gap: 10px;
     align-self: stretch;
-    background: rgba(255, 140, 99, 0.53);
+    background: rgba(255, 140, 99, 0.8);
   }
 
+  .item-cell:hover {
+    background: #ffffff;
+  }
+  .item-cell:hover p{
+    color: #FF8C63;
+  }
+  .item-cell:hover .item-label{
+    background: #fffffff3;
+  }
+
+  img{
+    border-radius: 20px;
+  }
+  .simpleParallax{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
 .FullImage{
     height: 45vw;
 }  

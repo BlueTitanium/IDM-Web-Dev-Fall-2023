@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>FINAL PROJECT HOME</title>
-    <script src="myscript.js" defer></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>FINAL PROJECT HOME</title>   
 
     
-
+    
 </head>
 <body>
     <div class="header">
         <h1>
             the food lab
         </h1>
-        <h2>
+        <h2 id="typing">
             a look into the chemistry of foods
         </h2>
     </div>
     <div class="slidesHolder">
-        <div class="carousel" data-flickity='{ "wrapAround": true,"contain": true}'>
+        <div class="carousel" data-flickity='{ "contain": true}'>
             <a class="carousel-cell" href="protein.html">
-                <div class="carousel-image">
+                <div class="carousel-image" style="background-image: url(images/protein.jpg);">
                     <div class="carousel-label">
                         <h3>
                             protein
@@ -31,8 +31,8 @@
                     </div>
                 </div>
             </a>
-            <a class="carousel-cell" href="meat.html">
-                <div class="carousel-image">
+            <a class="carousel-cell" href="meat.html"> 
+                <div class="carousel-image"style="background-image: url(images/meat.jpg);">
                     <div class="carousel-label">
                         <h3>
                             meat
@@ -41,8 +41,8 @@
                 </div>
             </a>
             <a class="carousel-cell" href="poultry.html">
-                <div class="carousel-image">
-                    <div class="carousel-label">
+                <div class="carousel-image"style="background-image: url(images/ben-moreland-auijD19Byq8-unsplash.jpg);">
+                    <div class="carousel-label" >
                         <h3>
                             poultry
                         </h3>
@@ -50,7 +50,7 @@
                 </div>
             </a>
             <a class="carousel-cell" href="seafood.html">
-                <div class="carousel-image">
+                <div class="carousel-image"style="background-image: url(images/fish.jpg);">
                     <div class="carousel-label">
                         <h3>
                             seafood
@@ -59,7 +59,7 @@
                 </div>
             </a>
             <a class="carousel-cell" href="eggs.html">
-                <div class="carousel-image">
+                <div class="carousel-image" style="background-image: url(images/eggs.jpg);">
                     <div class="carousel-label">
                         <h3>
                             eggs
@@ -75,8 +75,10 @@
 
     <!-- using flickity for slides -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-    <!-- Simple Parallax library -->
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="indexScript.js"></script>
 </body>
 </html>
+
+
+<!-- IMAGES FROM NYU AND UNSPLASH -->

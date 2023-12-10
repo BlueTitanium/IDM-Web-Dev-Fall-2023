@@ -1,5 +1,5 @@
 // var classesNodeList = document.querySelectorAll(".galleryImage");
-var classes = document.querySelectorAll(".galleryImage"); // Do not use a period here!
+var classes = document.querySelectorAll(".galleryImage");
 
 
 
