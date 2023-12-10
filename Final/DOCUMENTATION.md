@@ -4,10 +4,13 @@
 [Link to site](https://bluetitanium.github.io/IDM-Web-Dev-Fall-2023/Final/index.html)
 
 # Project Overview
-The food lab is a final project developed by Taneim Miah for NYU IDM's Web Development course in Fall 2023. This project is primarily used to teach about food chemistry, food facts, and various health information related to categories of food. The main bulk of the work I've done is research, UI design, and enhancing the UX with some slight use of vanilla JavaScript. 
+The food lab is a final project developed by Taneim Miah for NYU IDM's Web Development course in Fall 2023. This project is primarily used to teach about food chemistry, food facts, and various health information related to categories of food. The bulk of my work was research, UI design, and enhancing the UX with some slight use of vanilla JavaScript. The categories of food on the site are protein, meats, poultry, seafood, and eggs. I hope you learn something from this site!
 
-[Food Lab Preview](images/preview.mp4)
-
+**Food Lab Preview**
+![image](https://github.com/BlueTitanium/IDM-Web-Dev-Fall-2023/assets/36556764/652ee20d-9bfe-4b5d-b012-9593839d8d2a)
+![image](https://github.com/BlueTitanium/IDM-Web-Dev-Fall-2023/assets/36556764/91f0d78e-0c51-4d0d-a199-96f54617d809)
+![image](https://github.com/BlueTitanium/IDM-Web-Dev-Fall-2023/assets/36556764/267fcb5e-445a-4bce-b383-c741e402f1b2)
+Please take a look at the actual [site](https://bluetitanium.github.io/IDM-Web-Dev-Fall-2023/Final/index.html) to actually experience the website and UX design fully.
 
 # Documentation
 A lot of the information that the food lab uses was researched from NYU's Intro to Foods + Food Science course and the book, Understanding Food Principles and Preparation, by Amy Brown. 
