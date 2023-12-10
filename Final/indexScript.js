@@ -1,9 +1,11 @@
+//FOR INDEX PAGE
+//TYPEWRITER INFO
 var app = document.getElementById('typing');
-
+//looping
 var typewriter = new Typewriter(app, {
     loop: true
 });
-
+//switch between 3 strings
 typewriter.typeString('a look into the chemistry of foods')
     .pauseFor(2500)
     .deleteAll()
